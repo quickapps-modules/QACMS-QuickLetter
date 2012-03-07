@@ -1,0 +1,1707 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-21 15:52+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Christopher Castro <y2k2000@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ../../../\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: actions/action.compose.php:18
+msgid "Invalid internal title."
+msgstr "Título interno inválido."
+
+#: actions/action.compose.php:19
+msgid "Invalid title."
+msgstr "Título inválido."
+
+#: actions/action.compose.php:20
+msgid "Invalid 'from' email."
+msgstr "Email 'De' inválido."
+
+#: actions/action.compose.php:21
+msgid "Select priority level."
+msgstr "Seleccione grado de prioridad."
+
+#: actions/action.compose.php:22
+msgid "Invalid plain text."
+msgstr "Texto plano inválido."
+
+#: actions/action.compose.php:23
+#: actions/action.users.php:35
+#: actions/action.users.php:359
+msgid "You must select at least one list."
+msgstr "Debe seleccionar al menos un grupo."
+
+#: actions/action.compose.php:70
+#, php-format
+msgid "- Email address not found to send test message: %s<br/>"
+msgstr "- E-mail no encontrado para enviar el mensaje: %s<br/>"
+
+#: actions/action.compose.php:74
+msgid "You must write at least one email address for the test."
+msgstr "Debe escribir al menos un email válido para la prueba."
+
+#: actions/action.compose.php:132
+msgid "Encountered some problems when sending:<br/>"
+msgstr "Se encontraron algunos problemas al enviar:<br/>"
+
+#: actions/action.compose.php:206
+msgid "Invalid name."
+msgstr "Nombre inválido."
+
+#: actions/action.compose.php:207
+msgid "Invalid parent list."
+msgstr "Grupo superior inválido."
+
+#: actions/action.compose.php:271
+#: actions/action.templates.php:30
+msgid "Invalid name. (Must be between 3-50 characters)"
+msgstr "Nombre  inválido. (Debe tener entre 3-30 caracteres)"
+
+#: actions/action.compose.php:272
+#: actions/action.templates.php:31
+msgid "Invalid descripton. (Must be between 3-255 characters)"
+msgstr "Descripción inválida. (Debe tener entre 3-225 caracteres)"
+
+#: actions/action.compose.php:299
+#: actions/action.templates.php:58
+msgid "Error writing template."
+msgstr "Error al escribir la plantilla."
+
+#: actions/action.compose.php:306
+#: actions/action.templates.php:65
+msgid "Template content cannot be empty."
+msgstr "El contenido de la plantilla no puede estar vacío."
+
+#: actions/action.queue.php:25
+msgid ""
+"Failed to locate a queue identifier in your request.\\n"
+"\\n"
+"Please ensure you provide a valid queue identifier to the engine."
+msgstr ""
+"Fallo al intentar cargar el identificador de cola indicado en su consulta.\\n"
+"\\n"
+"Por favor asegurese de proporcionar un identificador válido al sistema.\\n"
+
+#: actions/action.queue.php:34
+msgid ""
+"Failed to load the queue identifier you have specified in your request.\\n"
+"\\n"
+"Please ensure you provide a valid queue identifier to the engine."
+msgstr ""
+"Fallo al intentar cargar el identificador de cola indicado en su consulta.\\n"
+"\\n"
+"Por favor asegurese de proporcionar un identificador válido al sistema.\\n"
+
+#: actions/action.queue.php:77
+msgid "Successfully cancelled... returning to the queue message in 5 seconds."
+msgstr "Éxito al cancelar...regresando al Centro de Mensajes en 5 segundos."
+
+#: actions/action.queue.php:78
+msgid "Successfully cancelled... returning to the message centre in 5 seconds."
+msgstr "Éxito al cancelar...regresando al Centro de Mensajes en 5 segundos."
+
+#: actions/action.queue.php:90
+msgid "Resume"
+msgstr "Reanudar"
+
+#: actions/action.queue.php:91
+#: actions/action.queue.php:92
+msgid "This send has been paused."
+msgstr "Este envio ha sido pausado"
+
+#: actions/action.queue.php:106
+#: actions/action.queue.php:107
+msgid "Resuming the send. Please wait..."
+msgstr "Reanudando el envio. Por favor espere..."
+
+#: actions/action.queue.php:121
+#: actions/action.queue.php:122
+msgid "This queue has been sent!..."
+msgstr "Esta cola ya ha sido enviada!"
+
+#: actions/action.queue.php:124
+#: actions/action.queue.php:336
+msgid "Finish"
+msgstr "Finalizar"
+
+#: actions/action.queue.php:134
+#: actions/action.queue.php:135
+msgid "Preparing data to generate the queue. Please wait..."
+msgstr "Preparando datos para guenerar la cola. Por favor espere..."
+
+#: actions/action.queue.php:142
+#: actions/action.queue.php:143
+msgid "Inserting queue data into the database. Please wait..."
+msgstr "Insertando datos de cola en la base de datos. Por favor espere..."
+
+#: actions/action.queue.php:162
+#: actions/action.queue.php:180
+msgid "No users to load into queue."
+msgstr "No hay usuarios para agregar a la cola."
+
+#: actions/action.queue.php:163
+#: actions/action.queue.php:181
+#: actions/action.queue.php:182
+msgid ""
+"There were no users in any of the lists you selected to load into the sending queue.\\n"
+"\\n"
+"Please choose a list to send to which contains users."
+msgstr ""
+"No había usuarios en ninguna de los grupos indicados para cargar en la cola de envío.\\n"
+"\\n"
+" Por favor, elija un grupo que contenga usuarios."
+
+#: actions/action.queue.php:164
+msgid "There were no users in any of the lists you selected to load into the sending queue. Please choose a list to send to which contains users."
+msgstr "No había usuarios en ninguna de los grupos indicados para cargar en la cola de envío. Por favor, elija un grupo que contenga usuarios."
+
+#: actions/action.queue.php:191
+#, php-format
+msgid ""
+"Your message has been successfully queued and is ready to be sent to %s unique e-mail address.\\n"
+"\\n"
+"If you would like to proceed to send this message press OK, otherwise click Cancel to cancel the queue and return to the message centre."
+msgstr ""
+"Su mensaje ha sido puesto en cola exitosamente y está listo para ser enviado a %s direcciones e-mail.\\n"
+"\\n"
+"Si desea proceder con el envio de este mensaje, pulse Aceptar, haga clic en \"Cancelar\" para cancelar la cola y volver al centro de mensajes."
+
+#: actions/action.queue.php:200
+#: actions/action.queue.php:201
+#, php-format
+msgid "Successfully inserted %s address into the sending queue."
+msgstr "Éxtito al insertar %s direcciones en la cola de envios."
+
+#: actions/action.queue.php:221
+#: actions/action.queue.php:222
+msgid "Sending messages. Please wait..."
+msgstr "Enviando mensajes. Por favor espere..."
+
+#: actions/action.queue.php:224
+msgid "Pause"
+msgstr "Pausar"
+
+#: actions/action.queue.php:224
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: actions/action.queue.php:277
+#, php-format
+msgid "Success to send email to: %s"
+msgstr "Éxito al enviar email a: %s"
+
+#: actions/action.queue.php:286
+#, php-format
+msgid "Failed sending to %s: "
+msgstr "Error al enviar a %s:"
+
+#: actions/action.queue.php:308
+#: actions/action.queue.php:309
+#, php-format
+msgid "Sent batch %s of %s... pausing for %s seconds."
+msgstr "Enviado lote %s de %s... pausando por %s segundos"
+
+#: actions/action.queue.php:316
+#: actions/action.queue.php:317
+#, php-format
+msgid "Sent batch %s of %s."
+msgstr "Enviado lote %s de %s."
+
+#: actions/action.queue.php:333
+#: actions/action.queue.php:334
+#, php-format
+msgid "Completed sending your message to %s users. Click finish to continue."
+msgstr "Concluído el envio de su mensaje a %s usuarios. Click en finalizar para continuar."
+
+#: actions/action.queue.php:344
+#: actions/action.queue.php:345
+#: actions/action.queue.php:347
+msgid "The required session details were not available, please try again."
+msgstr "Los detalles de sesión requeridos no están disponibles, intente nuevamente por favor."
+
+#: actions/action.setup.php:14
+msgid "Invalid Messages Per Refresh."
+msgstr "Mensajes por Refrescos inválido."
+
+#: actions/action.setup.php:15
+msgid "Invalid Pause Between Refreshes."
+msgstr "Pausa Entre Refescos inválida."
+
+#: actions/action.setup.php:17
+msgid "Invalid Queue Timeout."
+msgstr "Tiempo de Cola inválido."
+
+#: actions/action.setup.php:18
+msgid "Invalid Queue Timeout, must be higher than 'Pause Between Refreshes'."
+msgstr "Tiempo de Cola inválido, debe ser mayor que 'Pausa Entre Refrescos'."
+
+#: actions/action.setup.php:34
+msgid "Invalid SMTP address."
+msgstr "Dirección SMTP inválida."
+
+#: actions/action.setup.php:35
+msgid "Invalid SMTP user."
+msgstr "Usuario SMTP inválido."
+
+#: actions/action.setup.php:36
+msgid "Invalid SMTP password."
+msgstr "Contraseña SMTP inválida."
+
+#: actions/action.setup.php:41
+msgid "Invalid Gmail server address."
+msgstr "Dirección servidor Gmail inválido."
+
+#: actions/action.setup.php:42
+msgid "Invalid Gmail server port."
+msgstr "Puerto servidor Gmail inválido."
+
+#: actions/action.setup.php:43
+msgid "Invalid Gmail user."
+msgstr "Usuario Gmail inválido."
+
+#: actions/action.setup.php:44
+msgid "Invalid Gmail password."
+msgstr "Contraseña Gmail inválida."
+
+#: actions/action.users.php:29
+#: actions/action.users.php:354
+msgid "Invalid user name."
+msgstr "Nombre de usuario inválido."
+
+#: actions/action.users.php:31
+#: actions/action.users.php:356
+msgid "Invalid user's email."
+msgstr "E-mail de usuario inválido."
+
+#: actions/action.users.php:32
+#: actions/action.users.php:357
+#: actions/action.users.php:408
+msgid "User's email already in use."
+msgstr "E-mail de usuario ya está en uso."
+
+#: actions/action.users.php:55
+#: actions/action.users.php:365
+#, php-format
+msgid "The custom field &quot; %s &quot; has been set to be a required field."
+msgstr "El campo personalizado &quot; %s &quot; se ha establecido como requerido."
+
+#: actions/action.users.php:154
+msgid "Invalid field type."
+msgstr "Tipo de campo inválido."
+
+#: actions/action.users.php:156
+msgid "Short name must only contain letters and numbers. between 3-16 characters are required (character '_' is allowed)."
+msgstr "Nombre corto debe contener sólo letras y números. se requieren entre 3-16 caracteres (el caracter '_' está prmitido)"
+
+#: actions/action.users.php:157
+msgid "Short name already in use."
+msgstr "Nombre corto ya está en uso."
+
+#: actions/action.users.php:159
+msgid "Max length must be a number."
+msgstr "Largo máximo debe ser un número."
+
+#: actions/action.users.php:174
+msgid "&quot;Field Options&quot; are required when the field type is a checkbox or radio. This is how the program generates the checkboxs. Use the following as an example:<br />blue=Blue Ball<br />red=Red Ball<br />yellow=Yellow Ball<br />black=Black Ball"
+msgstr "&quot;Opciones de campo&quot; es requerido cuando el tipo de campo es una casilla de verificación o de radio. De este modo, el programa genera los checkboxs. Como en el siguiente ejemplo: <br/>azul=Bola Azul<br/>rojo=Bola Roja<br/>amarillo=Bola Amarilla<br/>valor=Etiqueta"
+
+#: actions/action.users.php:201
+msgid "Invalid short name, forbidden name."
+msgstr "Nombre corto inválido, valor no admitido."
+
+#: actions/action.users.php:286
+msgid "There is no file in the filesystem to import, please try again."
+msgstr "No se encontraron datos para importar, intente otra vez."
+
+#: actions/action.users.php:290
+msgid "You must select at least one group to import these subscribers into under 'Imported Data Destination'."
+msgstr "Debe seleccionar al menos un grupo para importar los usuarios, vea la sección 'Destino de Importación'"
+
+#: actions/action.users.php:294
+msgid "Invalid 'Enclosed By'."
+msgstr "'Encerrados por' inválido."
+
+#: actions/action.users.php:298
+msgid "Invalid 'Delimited By'."
+msgstr "'Separados por' inválido,"
+
+#: actions/action.users.php:314
+#: actions/action.users.php:322
+msgid "File Upload Error."
+msgstr "Error al cargar el fichero."
+
+#: actions/action.users.php:349
+msgid "Email cannot be empty."
+msgstr "Email no puede estar vacío."
+
+#: actions/action.users.php:350
+msgid "Name cannot be empty."
+msgstr "Nombre no puede estar vacío."
+
+#: actions/action.users.php:409
+#: actions/action.users.php:453
+msgid "Row"
+msgstr "Fila"
+
+#: actions/action.users.php:453
+#, php-format
+msgid "Successfully inserted [%s] into %s groups"
+msgstr "Éxito al insertar [%s] en %s grupos"
+
+#: inc/libs/class.mailer.php:9
+msgid "The MAIL_BY constant is not defined which means the loader wasn't called."
+msgstr "Constante MAIL_BY no definida, lo que significa que no se ha iniciado el booteo"
+
+#: views/view.compose.php:24
+#: views/view.lists.php:12
+#: views/view.messages.php:34
+#: views/view.queue.php:25
+#: views/view.setup.php:11
+#: views/view.templates.php:21
+#: views/view.users.php:42
+msgid "Start"
+msgstr "Inicio"
+
+#: views/view.compose.php:24
+#: views/view.lists.php:12
+#: views/view.messages.php:34
+#: views/view.queue.php:25
+#: views/view.setup.php:11
+#: views/view.templates.php:21
+#: views/view.users.php:42
+msgid "#__NAME"
+msgstr "Boletines"
+
+msgid "#__DESCRIPTION"
+msgstr "Genere lista de distribución y envíe boletines informativos vía E-mail."
+
+#: views/view.compose.php:24
+msgid "message compose"
+msgstr "redactar mensaje"
+
+#: views/view.compose.php:24
+msgid "message edit"
+msgstr "editando mensaje"
+
+#: views/view.compose.php:31
+#: views/view.lists.php:19
+#: views/view.messages.php:41
+#: views/view.queue.php:32
+#: views/view.setup.php:18
+#: views/view.templates.php:28
+#: views/view.users.php:49
+msgid "Compose a new message"
+msgstr "Redactar un nuevo mensaje"
+
+#: views/view.compose.php:31
+#: views/view.lists.php:19
+#: views/view.messages.php:41
+#: views/view.queue.php:32
+#: views/view.setup.php:18
+#: views/view.templates.php:28
+#: views/view.users.php:49
+msgid "Compose"
+msgstr "Redactar"
+
+#: views/view.compose.php:32
+#: views/view.lists.php:20
+#: views/view.messages.php:42
+#: views/view.queue.php:33
+#: views/view.setup.php:19
+#: views/view.templates.php:29
+#: views/view.users.php:50
+msgid "Message Centre"
+msgstr "Centro de Mensajes"
+
+#: views/view.compose.php:32
+#: views/view.lists.php:20
+#: views/view.messages.php:42
+#: views/view.messages.php:58
+#: views/view.queue.php:33
+#: views/view.setup.php:19
+#: views/view.templates.php:29
+#: views/view.users.php:50
+msgid "Messages"
+msgstr "Mensajes"
+
+#: views/view.compose.php:33
+#: views/view.lists.php:21
+#: views/view.messages.php:43
+#: views/view.queue.php:34
+#: views/view.setup.php:20
+#: views/view.templates.php:30
+#: views/view.users.php:51
+msgid "Groups"
+msgstr "Grupos"
+
+#: views/view.compose.php:34
+#: views/view.lists.php:22
+#: views/view.messages.php:44
+#: views/view.queue.php:35
+#: views/view.setup.php:21
+#: views/view.templates.php:31
+#: views/view.users.php:52
+msgid "Users"
+msgstr "Usuarios"
+
+#: views/view.compose.php:35
+#: views/view.lists.php:23
+#: views/view.messages.php:45
+#: views/view.queue.php:36
+#: views/view.queue.php:51
+#: views/view.setup.php:22
+#: views/view.templates.php:32
+#: views/view.users.php:53
+msgid "Queue Manager"
+msgstr "Gestor de colas"
+
+#: views/view.compose.php:35
+#: views/view.lists.php:23
+#: views/view.messages.php:45
+#: views/view.queue.php:36
+#: views/view.setup.php:22
+#: views/view.templates.php:32
+#: views/view.users.php:53
+msgid "Queue"
+msgstr "Cola"
+
+#: views/view.compose.php:36
+#: views/view.lists.php:24
+#: views/view.messages.php:46
+#: views/view.queue.php:37
+#: views/view.setup.php:23
+#: views/view.templates.php:33
+#: views/view.users.php:54
+msgid "Modify Templates"
+msgstr "Modificar Plantillas"
+
+#: views/view.compose.php:36
+#: views/view.lists.php:24
+#: views/view.messages.php:46
+#: views/view.queue.php:37
+#: views/view.setup.php:23
+#: views/view.templates.php:33
+#: views/view.users.php:54
+msgid "Templates"
+msgstr "Plantillas"
+
+#: views/view.compose.php:37
+#: views/view.lists.php:25
+#: views/view.messages.php:47
+#: views/view.queue.php:38
+#: views/view.setup.php:24
+#: views/view.templates.php:34
+#: views/view.users.php:55
+msgid "Configuration"
+msgstr "Configuración"
+
+#: views/view.compose.php:37
+#: views/view.lists.php:25
+#: views/view.messages.php:47
+#: views/view.queue.php:38
+#: views/view.setup.php:24
+#: views/view.templates.php:34
+#: views/view.users.php:55
+msgid "Setup"
+msgstr "Config."
+
+#: views/view.compose.php:48
+msgid "Compose New Newsletter"
+msgstr "Redactar Nuevo Boletín"
+
+#: views/view.compose.php:48
+msgid "Editing Newsletter"
+msgstr "Editando Boletín"
+
+#: views/view.compose.php:67
+msgid "Suppress warning"
+msgstr "Quitar alerta"
+
+#: views/view.compose.php:68
+msgid "Suppress this warning"
+msgstr "Quitar esta alerta"
+
+#: views/view.compose.php:73
+msgid "News Module Detected, you can import news."
+msgstr "Módulo Noticias detectado, puede importar noticias."
+
+#: views/view.compose.php:75
+msgid "Blogs Module Detected, you can import articles."
+msgstr "Módulo Blogs detectado, puede importar artículos."
+
+#: views/view.compose.php:97
+msgid "Newsletter's Content"
+msgstr "Contenido de Boletín"
+
+#: views/view.compose.php:106
+#: views/view.messages.php:81
+msgid "Internal Title"
+msgstr "Título Interno"
+
+#: views/view.compose.php:106
+msgid "This is an internal identifier for you, the administrator, so you can easily identify this message in the Message Centre. This field will never been seen by an end-user, it is available to the administrator."
+msgstr "Este es un identificador interno para usted, el administrador, de esta forma podrá identificar fácilmente este mensaje en el centro de mensajes. Este campo nunca será visto por un usuario final."
+
+#: views/view.compose.php:110
+msgid "+ Import News"
+msgstr "+ Importar Notícia"
+
+#: views/view.compose.php:115
+#: views/view.messages.php:82
+msgid "Subject"
+msgstr "Asunto"
+
+#: views/view.compose.php:117
+msgid "(no subject)"
+msgstr "(sin asunto)"
+
+#: views/view.compose.php:119
+msgid "+ Import Article"
+msgstr "+ Importar Artículo"
+
+#: views/view.compose.php:124
+msgid "&laquo;From&raquo; field"
+msgstr "Campo &laquo;De&raquo;"
+
+#: views/view.compose.php:124
+msgid "This is the from name and e-mail address that the end user will see when viewing your message."
+msgstr "Este es el nombre y dirección de correo electrónico que el usuario final verá cuando lea el mensaje."
+
+#: views/view.compose.php:128
+msgid "Priority"
+msgstr "Prioridad"
+
+#: views/view.compose.php:131
+msgid "Highest"
+msgstr "Alto"
+
+#: views/view.compose.php:132
+msgid "Normal"
+msgstr "Normal"
+
+#: views/view.compose.php:133
+msgid "Lowest"
+msgstr "Bajo"
+
+#: views/view.compose.php:144
+msgid "Plain Text Message"
+msgstr "Mensaje Texto Plano"
+
+#: views/view.compose.php:146
+msgid "+ Copy from HTML"
+msgstr "+ Copiar desde HTML"
+
+#: views/view.compose.php:159
+msgid "HTML Message"
+msgstr "Mensaje HTML"
+
+#: views/view.compose.php:162
+msgid "+ Save as Template"
+msgstr "+ Guardar como Plantilla"
+
+#: views/view.compose.php:173
+#: views/view.messages.php:85
+msgid "Footer"
+msgstr "Pie de Mensaje"
+
+#: views/view.compose.php:184
+msgid "Save as Draft"
+msgstr "Guardar como Borrador"
+
+#: views/view.compose.php:185
+msgid "Save Changes"
+msgstr "Guardar Cambios"
+
+#: views/view.compose.php:187
+msgid "Preview"
+msgstr "Vista Previa"
+
+#: views/view.compose.php:212
+msgid "Quick Help"
+msgstr "Ayuda Rápida"
+
+#: views/view.compose.php:221
+msgid "To send a message fill out the information. The minimum requirement for a valid message is the information in the \"Newsletter's Content\" tab. To finish your message and send it for real, choose the \"Lists\" tab, select your lists and click the button \"Send Message to Selected Mailinglists\""
+msgstr "Para enviar un mensaje debe completar la información requerida. El requisito mínimo para que un mensaje sea válido es la información en la sección  \"Contenido de Boletín\" . Para terminar su mensaje y enviarlo definitivamente, elija los grupos de envio en la seccion \"Grupos\",  seleccione los grupos deseados y haga clic en el botón  \"Enviar Boletín a los Grupos Seleccionadas\""
+
+#: views/view.compose.php:228
+msgid "Placeholders"
+msgstr "Marcadores"
+
+#: views/view.compose.php:231
+msgid "You can use certain Placeholders in your values. Placeholders look like [SOMETEXT], where SOMETEXT can be different. Some useful placeholders are:"
+msgstr "Puede utilizar algunos marcadores en sus entradas. Los marcadores son del tipo [TEXTO], donde TEXTO puede ser diferente. Algunos marcadores útiles son:"
+
+#: views/view.compose.php:236
+msgid "the address you type for your website."
+msgstr "la dirección de su sitio web."
+
+#: views/view.compose.php:237
+msgid "the text you type for your domain."
+msgstr "el  nombre de su dominio."
+
+#: views/view.compose.php:238
+msgid "the location of the subscribe page."
+msgstr "la ubicación de la página de inscripción."
+
+#: views/view.compose.php:239
+msgid "the location of the unsubscribe page."
+msgstr "la ubicación de la página donde los usuarios pueden cancelar su suscripción."
+
+#: views/view.compose.php:240
+msgid "he location of the page where users can update their details."
+msgstr "la ubicación de la página donde los usuarios pueden actualizar sus datos."
+
+#: views/view.compose.php:241
+msgid "the location of the page where users have to confirm their subscription."
+msgstr "la ubicación de la página donde los usuarios deben confirmar su suscripción."
+
+#: views/view.compose.php:243
+msgid "+ More Placeholders"
+msgstr "+ Más Marcadores"
+
+#: views/view.compose.php:247
+msgid "this will input the database ID of the user"
+msgstr "ID del usuario en la base de datos"
+
+#: views/view.compose.php:248
+msgid "this will input the users full name"
+msgstr "nombre del usuario"
+
+#: views/view.compose.php:249
+msgid "this will input the users e-mail address"
+msgstr "email del usuario"
+
+#: views/view.compose.php:250
+msgid "this will input the users gender"
+msgstr "sexo del usuario"
+
+#: views/view.compose.php:251
+msgid "this will input the activation KEY"
+msgstr "LLAVE de activación de usuario"
+
+#: views/view.compose.php:252
+msgid "this will input the date that the user signed up to the list"
+msgstr "fecha en la que el usuario se suscribió"
+
+#: views/view.compose.php:253
+msgid "this will input the date that the user modified the profile"
+msgstr "fecha de la última modificación de perfil del usuario"
+
+#: views/view.compose.php:256
+msgid "Custom Placeholders"
+msgstr "Marcadores Personalizados"
+
+#: views/view.compose.php:261
+msgid "this is a custom placeholder that can be used in any template, message body or message subject"
+msgstr "este es un marcador personalizado y puede ser utilizado en cualquier cuerpo o asunto de mensaje"
+
+#: views/view.compose.php:283
+msgid "Lists"
+msgstr "Grupos"
+
+#: views/view.compose.php:290
+msgid "Please select the lists you want to send it to:"
+msgstr "Por favor escoja los grupos a los cuales enviar:"
+
+#: views/view.compose.php:294
+msgid "+ Create New List"
+msgstr "+ Crear Nuevo Grupo"
+
+#: views/view.compose.php:296
+msgid "List Name"
+msgstr "Nombre Grupo"
+
+#: views/view.compose.php:298
+msgid "Add"
+msgstr "Agregar"
+
+#: views/view.compose.php:305
+msgid "Send Message to Selected Mailinglists"
+msgstr "Enviar Boletín a los Grupos Seleccionados"
+
+#: views/view.compose.php:318
+msgid "Test Message"
+msgstr "Mensaje de Prueba"
+
+#: views/view.compose.php:325
+msgid "To email address(es)"
+msgstr "A los Email(s)"
+
+#: views/view.compose.php:330
+msgid "(comma separate addresses - all must be users)"
+msgstr "(separados por <em>coma</em>, todos deben ser usuarios)"
+
+#: views/view.compose.php:337
+msgid "Send Test Message"
+msgstr "Enviar Mensaje de Prueba"
+
+#: views/view.lists.php:12
+msgid "groups manager"
+msgstr "gestión de grupos"
+
+#: views/view.lists.php:36
+msgid "User's Groups"
+msgstr "Grupos de Usuarios"
+
+#: views/view.messages.php:34
+msgid "messages"
+msgstr "mensajes"
+
+#: views/view.messages.php:67
+#: views/view.users.php:124
+msgid "Quick Search"
+msgstr "Búsqueda Rápida"
+
+#: views/view.messages.php:78
+msgid "User Message"
+msgstr "Mensaje de Usuario"
+
+#: views/view.messages.php:83
+msgid "HTML Version"
+msgstr "Versión HTML"
+
+#: views/view.messages.php:84
+msgid "Text Version"
+msgstr "Versión Texto Plano"
+
+#: views/view.messages.php:86
+msgid "Creation Date"
+msgstr "Fecha de Creación"
+
+#: views/view.messages.php:91
+#: views/view.users.php:146
+msgid "Contains"
+msgstr "Contiene"
+
+#: views/view.messages.php:92
+#: views/view.users.php:147
+msgid "Equals"
+msgstr "es Igual a"
+
+#: views/view.messages.php:115
+#: views/view.queue.php:125
+#: views/view.templates.php:59
+#: views/view.users.php:193
+msgid "With Selected"
+msgstr "Con Seleccionados"
+
+#: views/view.messages.php:117
+#: views/view.queue.php:128
+#: views/view.queue.php:135
+#: views/view.templates.php:61
+#: views/view.users.php:195
+msgid "Select Action"
+msgstr "Seleccione Acción"
+
+#: views/view.messages.php:118
+msgid "Delete messages"
+msgstr "Borrar mensajes"
+
+#: views/view.messages.php:118
+#: views/view.queue.php:129
+#: views/view.templates.php:62
+#: views/view.users.php:196
+msgid "Delete"
+msgstr "Borrar"
+
+#: views/view.queue.php:25
+msgid "queue progress"
+msgstr "progreso de cola"
+
+#: views/view.queue.php:25
+msgid "queue manager"
+msgstr "gestor de colas"
+
+#: views/view.queue.php:51
+msgid "Sending Message"
+msgstr "Enviando Mensaje"
+
+#: views/view.queue.php:64
+msgid "Progress"
+msgstr "Progreso"
+
+#: views/view.queue.php:100
+msgid "Logs"
+msgstr "Visor de Sucesos"
+
+#: views/view.queue.php:129
+msgid "Delete queue"
+msgstr "Eliminar cola"
+
+#: views/view.setup.php:11
+msgid "preferences"
+msgstr "preferencias"
+
+#: views/view.setup.php:35
+msgid "Preferences & Configuration"
+msgstr "Configuración y Preferencias"
+
+#: views/view.setup.php:49
+msgid "E-Mail Configuration"
+msgstr "Configuración de E-mail"
+
+#: views/view.setup.php:59
+msgid "Messages Per Refresh"
+msgstr "Mensajes por Refesco"
+
+#: views/view.setup.php:59
+msgid "This is the number of messages that the program will send before it pauses and then refreshes. The default setting is 50 messages and this number should be increased or decreased based on the load of your server.<br/><br/><strong>Important:</strong> This module works by delivering X number of messages, then pausing X number of seconds. This process is called a cycle and is used to help you prevent your mail server from being overwhelmed and to prevent PHP timeouts."
+msgstr "Este es el número de mensajes que el programa enviará antes de pausar y refrescar nuevamente. La configuración por defecto es de 50 mensajes, este número puede ser incrementado o disminuido de acuerdo a la carga de su servidor. <br/> <br/> <strong> Importante: </strong> Este módulo funciona mediante el envío de X número de mensajes y, a continuación, pausa X número de segundos. Este proceso se llama un ciclo y se utiliza para ayudar a evitar que su servidor de correo colapse y evitar cuelgues de PHP."
+
+#: views/view.setup.php:65
+msgid "Pause Between Refreshes"
+msgstr "Pausas Entre Refrescos"
+
+#: views/view.setup.php:65
+msgid "This is the number of seconds that the program will pause between refreshes. The default setting is 1 second; however, you are free to increase or decrease this based on the load of your server.<br /><br /><strong>Important:</strong><br />This program has the ability to pause between refreshes to allow you to prevent your mail server from being overwhelmed and to prevent PHP timeouts."
+msgstr "Este es la duración de las pausas que el programa efectúa entre cada refresco. Por defecto es 1 segundo; aunque, es libre de incrementar o disminuir a gusto deacuerdo a la carga de su servidor.<br /> <br /> <strong> Importante: </strong> <br /> Este programa tiene el capacidad para hacer una pausa entre cada refresco lo cual le permite evitar que su servidor de correo colapse y evitar tiempos de espera en PHP."
+
+#: views/view.setup.php:66
+#: views/view.setup.php:70
+msgid "seconds"
+msgstr "segundos"
+
+#: views/view.setup.php:69
+msgid "Queue Timeout"
+msgstr "Tiempo de Cola"
+
+#: views/view.setup.php:69
+msgid "This is the number of seconds that the program will consider your sending queue still active. After this number, the program will assume that your sending process has stalled at it will allow you to resume the stalled send.<br /><br /><strong>Important:</strong><br />This number <em>must</em> be higher than your \"Pause Between Refreshes\" number or the program will consider your active sending queue stalled when it is not."
+msgstr "Este es el número de segundos que el programa considerará como activo sus colas de envios. Después de este número, el programa supondrá que su envío se ha estancado en el proceso permitiendole reanudar la cola estancada. <br/> <br/> <strong> Importante: </strong> <br/> Este número <em> debe </em> ser mayor que  \"Pausa Entre Refrescos\" o el programa supondrá que su envio esta estancado cuando en realidad esta siendo enviado."
+
+#: views/view.setup.php:76
+msgid "Message Delivery Method"
+msgstr "Método de Entrega"
+
+#: views/view.setup.php:76
+msgid "This module provides you with the option of choosing what method you use to deliver your messages to your subscribers."
+msgstr "Este módulo le ofrece la opción de elegir el método que desea utilizar para entregar sus mensajes a sus usuarios."
+
+#: views/view.setup.php:93
+msgid "SMTP Server Address"
+msgstr "SMTP Server Address"
+
+#: views/view.setup.php:97
+msgid "SMTP Keep Alive"
+msgstr "SMTP Keep Alive"
+
+#: views/view.setup.php:100
+msgid "Enabled"
+msgstr "Desactivado"
+
+#: views/view.setup.php:101
+msgid "Disabled"
+msgstr "Habilitado"
+
+#: views/view.setup.php:106
+msgid "SMTP Authentication Enabled"
+msgstr "SMTP Identificación habilitada"
+
+#: views/view.setup.php:109
+msgid "No"
+msgstr "No"
+
+#: views/view.setup.php:110
+msgid "Yes"
+msgstr "Si"
+
+#: views/view.setup.php:115
+msgid "SMTP Username"
+msgstr "SMTP Username"
+
+#: views/view.setup.php:119
+msgid "SMTP Password"
+msgstr "SMTP Password"
+
+#: views/view.setup.php:157
+#: views/view.setup.php:200
+msgid "Save"
+msgstr "Guardar"
+
+#: views/view.setup.php:174
+msgid "Program Preferences"
+msgstr "Preferencias de Aplicación"
+
+#: views/view.templates.php:21
+msgid "templates"
+msgstr "plantillas"
+
+#: views/view.templates.php:45
+msgid "Editing Template"
+msgstr "Editando Plantilla"
+
+#: views/view.templates.php:45
+msgid "Message's Templates"
+msgstr "Plantillas de Mensaje"
+
+#: views/view.templates.php:62
+msgid "Delete templates"
+msgstr "Eliminar Plantillas"
+
+#: views/view.users.php:10
+msgid "users list"
+msgstr "listado de usuarios"
+
+#: views/view.users.php:14
+msgid "editing user"
+msgstr "editando usuario"
+
+#: views/view.users.php:18
+msgid "import users"
+msgstr "importar usuarios"
+
+#: views/view.users.php:22
+msgid "export users"
+msgstr "exportar usuarios"
+
+#: views/view.users.php:26
+msgid "add new user"
+msgstr "agregar nuevo usuario"
+
+#: views/view.users.php:30
+msgid "custom fields"
+msgstr "campos personalizados"
+
+#: views/view.users.php:73
+msgid "Suscribers"
+msgstr "Subscritos"
+
+#: views/view.users.php:79
+msgid "Users List"
+msgstr "Listado de Usuarios"
+
+msgid "Users groups"
+msgstr "Grupos de usuarios"
+
+#: views/view.users.php:79
+msgid "List"
+msgstr "Grupo"
+
+#: views/view.users.php:83
+msgid "Manage custom fields"
+msgstr "Administrar Campos Personalizados"
+
+#: views/view.users.php:83
+msgid "Manage Fields"
+msgstr "Administrar Campos"
+
+#: views/view.users.php:87
+#: views/elements/add_user_form.php:62
+msgid "Add User"
+msgstr "Nuevo Usuario"
+
+#: views/view.users.php:93
+msgid "Import users from CSV file"
+msgstr "Importar usuarios desde archivo CSV"
+
+#: views/view.users.php:93
+#: views/elements/availables_articles.php:30
+#: views/elements/availables_news.php:30
+msgid "Import"
+msgstr "Importar"
+
+#: views/view.users.php:97
+msgid "Export users to CSV file"
+msgstr "Exportar usuarios a archivo CSV"
+
+#: views/view.users.php:97
+msgid "Export"
+msgstr "Exportar"
+
+#: views/view.users.php:102
+msgid "Add Field"
+msgstr "Nuevo Campo"
+
+#: views/view.users.php:137
+msgid "User Search"
+msgstr "Buscar Usuario"
+
+#: views/view.users.php:140
+msgid "Name Field"
+msgstr "Campo Nombre"
+
+#: views/view.users.php:141
+#: views/elements/add_user_form.php:52
+msgid "Gender"
+msgstr "Género"
+
+#: views/view.users.php:142
+msgid "E-Mail Address"
+msgstr "Dirección Email"
+
+#: views/view.users.php:163
+msgid "Show Group"
+msgstr "Mostrar Grupo"
+
+#: views/view.users.php:166
+msgid "-- All Groups --"
+msgstr "-- Todos los Grupos --"
+
+#: views/view.users.php:196
+msgid "Delete users"
+msgstr "Eliminar Usuarios"
+
+#: views/elements/add_user_form.php:12
+msgid "Editing User"
+msgstr "Editando Usuario"
+
+#: views/elements/add_user_form.php:12
+msgid "Add New User"
+msgstr "Agregar Nuevo Usuario"
+
+#: views/elements/add_user_form.php:29
+msgid "Basic User Data"
+msgstr "Datos Básicos de Usuario"
+
+#: views/elements/add_user_form.php:36
+msgid "Name"
+msgstr "Nombre"
+
+#: views/elements/add_user_form.php:40
+msgid "Email"
+msgstr "Email"
+
+#: views/elements/add_user_form.php:44
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#: views/elements/add_user_form.php:48
+msgid "Send HTML emails"
+msgstr "Enviar emails HTML"
+
+#: views/elements/add_user_form.php:55
+msgid "Male"
+msgstr "Masculino"
+
+#: views/elements/add_user_form.php:56
+msgid "Female"
+msgstr "Femenino"
+
+#: views/elements/add_user_form.php:62
+msgid "Update User"
+msgstr "Actualizar Usuario"
+
+#: views/elements/add_user_form.php:82
+msgid "Subscriber List"
+msgstr "Listado de Grupos"
+
+#: views/elements/add_user_form.php:109
+msgid "Custom Fields"
+msgstr "Campos Personalizados"
+
+#: views/elements/availables_articles.php:6
+#: views/elements/availables_news.php:6
+msgid "Select by Title"
+msgstr "Seleccionar por Título"
+
+#: views/elements/delete_list_form.php:11
+msgid "Deleting List"
+msgstr "Eliminando Grupo"
+
+#: views/elements/delete_list_form.php:20
+msgid "Please confirm that you wish to delete the following list"
+msgstr "Por favor confirme la eliminación del siguiente grupo"
+
+#: views/elements/delete_list_form.php:29
+#, php-format
+msgid "There are %s user residing under %s:"
+msgstr "Hay %s usuarios residiendo en %s:"
+
+#: views/elements/delete_list_form.php:32
+msgid "<strong>Delete</strong> all subscribers residing in this list."
+msgstr "<strong>Borrar</strong> todos los usuarios residentes en este grupo."
+
+#: views/elements/delete_list_form.php:35
+msgid "<strong>Move</strong> all subscribers residing in this list."
+msgstr "<strong>Mover</strong> todos los usuarios residentes en este grupo."
+
+#: views/elements/delete_list_form.php:57
+msgid "Unable to move users, as there are no other top level lists."
+msgstr "Imposible mover usuarios, no hay más grupos disponibles."
+
+#: views/elements/delete_list_form.php:66
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: views/elements/lists_list.php:4
+msgid "Group Name"
+msgstr "Nombre del Grupo"
+
+#: views/elements/lists_list.php:5
+msgid "# Users"
+msgstr "# Usuarios"
+
+#: views/elements/lists_list.php:23
+#: views/elements/queue_list.php:43
+#: views/elements/users_list.php:72
+msgid "No items that match your filter settings were found."
+msgstr "No se encontraron items que coincidan los los filtros indicados."
+
+#: views/elements/lists_list.php:46
+msgid "You have no lists."
+msgstr "No hay grupos de usuarios."
+
+#: views/elements/lists_list.php:61
+msgid "save"
+msgstr "guardar"
+
+#: views/elements/lists_list.php:62
+msgid "cancel"
+msgstr "cancelar"
+
+#: views/elements/lists_list.php:63
+msgid "saving..."
+msgstr "guardando..."
+
+#: views/elements/lists_selectbox.php:2
+msgid "Parent List"
+msgstr "Grupo Superior"
+
+#: views/elements/manage_fields.php:16
+msgid "Editing Field"
+msgstr "Editando Campo"
+
+#: views/elements/manage_fields.php:16
+msgid "Add New Field"
+msgstr "Agregar Nuevo Campo"
+
+#: views/elements/manage_fields.php:27
+msgid "This is the type of custom field that you are looking at adding. Currently you can select a number of different HTML field types as well as a linebreak."
+msgstr "Este es el tipo de campo personalizado que usted está viendo agregando. Puede seleccionar diferentes tipos de campos HTML, como por ejemplo un campo de texto."
+
+#: views/elements/manage_fields.php:27
+msgid "Field Type"
+msgstr "Tipo de Campo"
+
+#: views/elements/manage_fields.php:41
+msgid "This is a short name for the field that must be all lowercase, all one word and no special characters. This field must also be unique because it is what you will use to call this field in a custom e-mail placeholder!"
+msgstr "Este es un nombre corto para el campo que debe cumplir con estar en minúsculas, ser una sola palabra y no tener caracteres especiales.Además este nombre debe ser único, pues este nombre es el que utilizará en sus mensajes como Marcador."
+
+#: views/elements/manage_fields.php:41
+msgid "Field Short Name"
+msgstr "Nombre Corto"
+
+#: views/elements/manage_fields.php:45
+msgid "This is the title or longer name for your custom field. This could also be a question."
+msgstr "Este es el título o el nombre largo de su campo personalizado. Puede ser por ejemplo una pregunta."
+
+#: views/elements/manage_fields.php:45
+msgid "Field Display Name"
+msgstr "Etiqueta de Campo"
+
+#: views/elements/manage_fields.php:53
+msgid "This is the options or defined value(s) of your custom field. If you are using a checkbox, radio button or select box you will want to specify your options here.<br/><br/><strong>Example:</strong><br/>blue=Blue<br/>red=Red<br/>green=Green"
+msgstr "Estas son las opciones o valor(es) definidos del campo personalizado. Si está utilizando una casilla de verificación, botón de radio o caja de selección debe especificar sus opciones aquí. <br/> <br/> <strong> Ejemplo: </ strong> <br/> azul = Azul <br/> rojo = Rojo <br/> verde = Verde"
+
+#: views/elements/manage_fields.php:53
+msgid "Field Options"
+msgstr "Opciones de Campo"
+
+#: views/elements/manage_fields.php:54
+msgid "(required for radio buttons, select boxes, check boxes and hidden field valued only.)"
+msgstr "(requerido sólo para campos del tipo radio buttons, select boxes, check boxes y hidden.)"
+
+#: views/elements/manage_fields.php:59
+msgid "This is only used if your Field Type is a textbox. This will limit the subscriber to typing X number of characters in your textbox."
+msgstr "Esto sólo se utiliza si el tipo de campo es un cuadro de texto. Esto limitará que el usuario pueda escribir X número de caracteres en el cuadro de texto."
+
+#: views/elements/manage_fields.php:59
+msgid "Maxlength"
+msgstr "Largo Máximo"
+
+#: views/elements/manage_fields.php:59
+msgid "(used only for text boxes)"
+msgstr "(utilizado solo para cajas de textos)"
+
+#: views/elements/manage_fields.php:63
+msgid "Specify whether you want this custom field to be a required field or you can have it set to be optional."
+msgstr "Especifique si desea que este campo sea obligatorio u opcional."
+
+#: views/elements/manage_fields.php:63
+msgid "Required Field"
+msgstr "Campo requerido"
+
+#: views/elements/manage_fields.php:63
+msgid "(is this field required when users sign-up?)"
+msgstr "(cuando el suaurio se registra el campo es obligatorio?)"
+
+#: views/elements/manage_fields.php:75
+msgid "Update Field"
+msgstr "Actualizar Campo"
+
+#: views/elements/manage_fields.php:109
+msgid "Field Name"
+msgstr "Nombre Campo"
+
+#: views/elements/manage_fields.php:110
+msgid "Field Preview"
+msgstr "Vista Previa de Campo"
+
+#: views/elements/manage_fields.php:111
+msgid "Order"
+msgstr "Orden"
+
+#: views/elements/manage_fields.php:116
+msgid "User Name"
+msgstr "Nombre usuario"
+
+#: views/elements/manage_fields.php:121
+msgid "E-mail Address"
+msgstr "Dirección E-mail"
+
+#: views/elements/manage_fields.php:164
+msgid "You have no custom fields."
+msgstr "No hay Campos Personalizados."
+
+#: views/elements/manage_fields.php:169
+msgid "Update Order"
+msgstr "Actualizar Orden"
+
+#: views/elements/messages_list.php:33
+#: views/elements/queue_list.php:11
+#: views/elements/users_list.php:47
+msgid "date-iso"
+msgstr "date-eu"
+
+#: views/elements/messages_list.php:33
+msgid "Created"
+msgstr "Creado"
+
+#: views/elements/messages_list.php:34
+#: views/elements/templates_list.php:6
+msgid "Title"
+msgstr "Título"
+
+#: views/elements/messages_list.php:63
+#: views/elements/queue_list.php:59
+#: views/elements/users_list.php:93
+msgid "Y-m-d H:i:s"
+msgstr "d-m-Y H:i:s"
+
+#: views/elements/messages_list.php:73
+msgid "You have no messages."
+msgstr "No hay mensajes."
+
+#: views/elements/messages_list.php:98
+#: views/elements/queue_list.php:97
+#: views/elements/templates_list.php:70
+#: views/elements/users_list.php:126
+msgid "Rows per Page"
+msgstr "Registros por página"
+
+#: views/elements/message_preview.php:9
+msgid "From"
+msgstr "De"
+
+#: views/elements/message_preview.php:14
+msgid "For"
+msgstr "Para"
+
+#: views/elements/queue_list.php:4
+#, php-format
+msgid "It appears as though queue id <strong>%s</strong> has stalled. Please resume sending or cancel this message."
+msgstr "Aparentemente la cola con id <strong>%s</strong> se ha estancado. Por favor reanude o cancele su progreso."
+
+#: views/elements/queue_list.php:11
+msgid "Sent Date"
+msgstr "Fecha Envio"
+
+#: views/elements/queue_list.php:12
+msgid "Message Title"
+msgstr "Título Mensaje"
+
+#: views/elements/queue_list.php:14
+msgid "Status"
+msgstr "Estado"
+
+#: views/elements/queue_list.php:70
+msgid "You have no queues."
+msgstr "No hay colas disponibles."
+
+#: views/elements/save_template_form.php:9
+#: views/elements/template_edit_form.php:22
+msgid "Template Name"
+msgstr "Nombre de Plantilla"
+
+#: views/elements/save_template_form.php:17
+#: views/elements/template_edit_form.php:26
+msgid "Template Description"
+msgstr "Descripción de Plantilla"
+
+#: views/elements/templates_list.php:7
+msgid "Description"
+msgstr "Descripción"
+
+#: views/elements/templates_list.php:42
+msgid "You have no templates."
+msgstr "No hay plantillas"
+
+#: views/elements/template_edit_form.php:33
+msgid "Update Template"
+msgstr "Actualizar Plantilla"
+
+#: views/elements/users_list.php:47
+msgid "Signup Date"
+msgstr "Fecha de Alta"
+
+#: views/elements/users_list.php:101
+msgid "You have no users."
+msgstr "No hay usuarios."
+
+#: views/elements/user_export.php:3
+#: views/elements/user_import.php:3
+msgid "Import Mailing List"
+msgstr "Importar Listado de Envío"
+
+#: views/elements/user_export.php:11
+#, php-format
+msgid "Your Comma Separated Values (.csv) export file should begin downloading automatically; however, if it does not please click %s to download it."
+msgstr "La exportación de su archivo Comma Separated Values (.csv) debería comenzar a descargarse ahora; Si no lo hace puede hacer click %s para descargarlo."
+
+#: views/elements/user_export.php:11
+msgid "<b>here</b>"
+msgstr "<b>aquí</b>"
+
+#: views/elements/user_export.php:20
+msgid "Please select which fields you would like to be included with this export using the form below"
+msgstr "Escoja en el formulario siguiente cuales campos desea que sean incluídos en la exportación"
+
+#: views/elements/user_export.php:34
+msgid "The subscriber id must be present in all exports, you cannot de-select this field."
+msgstr "El id de suscriptor debe estar presente en todas las exportacion, no se puede descheckear este campo."
+
+#: views/elements/user_export.php:35
+msgid "ID of the subscriber in the database."
+msgstr "ID de suscriptor en la base de datos."
+
+#: views/elements/user_export.php:55
+msgid "Name of the subscriber."
+msgstr "la ubicación de la pNombre de suscriptor."
+
+#: views/elements/user_export.php:59
+msgid "E-mail address of the subscriber."
+msgstr "E-mail de suscriptor."
+
+#: views/elements/user_export.php:63
+msgid "Date the subscriber joined your database."
+msgstr "Fecha de alta de suscriptor."
+
+#: views/elements/user_export.php:82
+#: views/elements/user_import.php:188
+msgid "Fields Enclosed By"
+msgstr "Campos encerrados por"
+
+#: views/elements/user_export.php:87
+#: views/elements/user_import.php:193
+msgid "Fields Delimited By"
+msgstr "Campos Separados por"
+
+#: views/elements/user_export.php:115
+msgid "Export List"
+msgstr "Exportar Listado"
+
+#: views/elements/user_import.php:17
+#, php-format
+msgid "You have %s errors for review"
+msgstr "Se han encontrado %s errores"
+
+#: views/elements/user_import.php:27
+#, php-format
+msgid "Successfully completed %s tasks"
+msgstr "%s tareas terminadas"
+
+#: views/elements/user_import.php:41
+msgid "<< Retry"
+msgstr "<< Reintentar"
+
+#: views/elements/user_import.php:45
+msgid "Finished"
+msgstr "Terminado"
+
+#: views/elements/user_import.php:68
+#: views/elements/user_import.php:81
+#: views/elements/user_import.php:104
+msgid "Do not import"
+msgstr "No importar"
+
+#: views/elements/user_import.php:70
+#: views/elements/user_import.php:83
+#: views/elements/user_import.php:106
+msgid "Column"
+msgstr "Columna"
+
+#: views/elements/user_import.php:113
+msgid "Import >>"
+msgstr "Importar >>"
+
+#: views/elements/user_import.php:136
+msgid "Imported Data Source"
+msgstr "Origen de Importación"
+
+#: views/elements/user_import.php:137
+msgid "Imported Data Destination"
+msgstr "Destino de Importación"
+
+#: views/elements/user_import.php:141
+msgid "I would like to upload and import a Comma Separated Values (CSV) file."
+msgstr "Deseo cargar un fichero CSV e importarlo."
+
+#: views/elements/user_import.php:142
+msgid "I would like to paste CSV data into a textarea to import."
+msgstr "Deseo pegar mis datos CSV en un campo de texto e importarlos."
+
+#: views/elements/user_import.php:149
+msgid "Select Your Local CSV File:"
+msgstr "Seleccione su fichero CSV:"
+
+#: views/elements/user_import.php:154
+msgid "Important Notice:"
+msgstr "Aviso:"
+
+#: views/elements/user_import.php:154
+#, php-format
+msgid "Please be aware that your server's maximum upload file size is set to %sB and that we suggest making your import files small than 1,000 rows at a time to prevent server timeouts."
+msgstr "Su servidor limita el tamaño de carga a %sB, además se suguiere que realice importaciones de menos de 1.000 lineas para evitar posibles tiempos de espera."
+
+#: views/elements/user_import.php:162
+msgid "Please Paste CSV Data Below:"
+msgstr "Pegue su CSV a continuación:"
+
+#: views/elements/user_import.php:168
+msgid "Please select the group or groups that you would like these importees subscribed to:"
+msgstr "Seleccione el grupo o grupos en los cuales desea importar los suscriptores:"
+
+#: views/elements/user_import.php:200
+msgid "Import Options"
+msgstr "Opciones de Importación"
+
+#: views/elements/user_import.php:205
+msgid "The first row in the file/data contains the field names; try to match those."
+msgstr "La primera fila en el archivo/datos contiene el nombre de los campos, intentar coincidir."
+
+#: views/elements/user_import.php:209
+msgid "Next Step >>"
+msgstr "Siguiente Paso >>"
+
+#: lang/es_ES.js:1
+msgid "Test sent!"
+msgstr "Prueba enviada!"
+
+#: lang/es_ES.js:2
+msgid "Draft saved!"
+msgstr "Borrador guardado!"
+
+#: lang/es_ES.js:3
+msgid "Message updated!"
+msgstr "Mensaje actualizado!"
+
+#: lang/es_ES.js:4
+msgid "Sending Message...Redirecting in 3 secs"
+msgstr "Preparando para enviar...Redirecci&oacute;n en 3 segundos"
+
+#: lang/es_ES.js:5
+msgid "Confirm this action: "
+msgstr "Confirme esta acción:"
+
+#: lang/es_ES.js:6
+msgid "Processing..."
+msgstr "Procesando..."
+
+#: lang/es_ES.js:7
+msgid "Processing...done"
+msgstr "Procesando...listo"
+
+#: lang/es_ES.js:8
+msgid "Saving template..."
+msgstr "Guardando plantilla..."
+
+#: lang/es_ES.js:9
+msgid "Template saved!"
+msgstr "Plantilla guardada!"
+
+#: lang/es_ES.js:10
+msgid "Error occurred!"
+msgstr "Ha ocurrido un error!"
+
+#: lang/es_ES.js:11
+msgid "Saving data..."
+msgstr "Guardando datos..."
+
+#: lang/es_ES.js:12
+msgid "Saving data...done"
+msgstr "Guardando datos...listo"
+
+#: lang/es_ES.js:13
+#: lang/es_ES.js:26
+msgid "Deleting list..."
+msgstr "Eliminando grupo"
+
+#: lang/es_ES.js:14
+#: lang/es_ES.js:25
+msgid "Deleting list...done"
+msgstr "Eliminando grupo...listo"
+
+#: lang/es_ES.js:15
+msgid "Full version:"
+msgstr "Versión completa:"
+
+#: lang/es_ES.js:16
+msgid "Reordering fields..."
+msgstr "Reordenando campos..."
+
+#: lang/es_ES.js:17
+msgid "Reordering fields...done"
+msgstr "Reordenando campos...listo"
+
+#: lang/es_ES.js:18
+msgid "Saving field...done"
+msgstr "Guardando campo...listo"
+
+#: lang/es_ES.js:19
+msgid "Saving field..."
+msgstr "Guardando campo..."
+
+#: lang/es_ES.js:20
+msgid "Deleting field..."
+msgstr "Eliminando campo..."
+
+#: lang/es_ES.js:21
+msgid "Deleting field...done"
+msgstr "Eliminando campo...listo"
+
+#: lang/es_ES.js:22
+msgid "Please confirm that you wish to delete the following custom field. Please note that if you delete this custom field, it will remove all pertaining custom user data as well."
+msgstr "Por favor confirme que desea eliminar el siguiente campo personalizado. Si elimina este campo, se eliminar&aacute; toda la informaci&oacute;m personalizada de los usuarios."
+
+#: lang/es_ES.js:23
+msgid "Saving user...done"
+msgstr "Guardando usuario...listo"
+
+#: lang/es_ES.js:24
+msgid "Saving user..."
+msgstr "Guardando usuario..."
+
+msgid "Suscribe Url"
+msgstr "URL Suscripción"
+
+msgid "Unsuscribe Url"
+msgstr "URL Darse de Baja"
+
+msgid "Message From Address"
+msgstr "Dirección Remitente"
+
+msgid "Message Replyto Address"
+msgstr "Dirección de Respuesta"
+
+msgid "Subscribe Subject"
+msgstr "Asunto en Mensaje de Suscripción"
+
+msgid "Subscribe Message"
+msgstr "Mensaje Suscripción"
+
+msgid "Unsubscribe Subject"
+msgstr "Asunto en Mensaje Darse de Baja"
+
+msgid "Unsubscribe Message"
+msgstr "Mensaje Darse de Baja"
+
+msgid "Confirmation Subject"
+msgstr "Asunto en Mensaje de Confirmación"
+
+msgid "Confirmation Url"
+msgstr "URL Confimación"
+
+msgid "Unsubscribe Url"
+msgstr "URL de Baja"
+
+msgid "Confirmation Message"
+msgstr "Mensaje de Confirmación"
+
+msgid "Preferences Url"
+msgstr "URL 'Preferencias'"
+
+msgid "Message Footer"
+msgstr "Pie de Mensajes"
+
+msgid "Message From Name"
+msgstr "Nombre Remitente"
+
+msgid "Sending"
+msgstr "Enviando"
+
+msgid "Stalled"
+msgstr "Estancado"
+
+msgid "Paused"
+msgstr "Pausado"
+
+msgid "Complete"
+msgstr "Terminado"
+
+msgid "Newsletter Field Names"
+msgstr "Nombre de Campos Disponibles"
+
+msgid "Imported Column Names"
+msgstr "Nombre de Columnas Importadas"
+
+msgid "messages controller"
+msgstr "mensajes"
+
+msgid "groups controller"
+msgstr "grupos"
+
+msgid "users controller"
+msgstr "usuarios"
+
+msgid "queue controller"
+msgstr "cola"
+
+msgid "templates controller"
+msgstr "plantillas"
+
+msgid "setup controller"
+msgstr "configuración"
+
+msgid "cfields controller"
+msgstr "usuarios / campos personalizados"
+
+msgid "messages index"
+msgstr "listado de mensajes"
+
+msgid "messages compose"
+msgstr "redactar nuevo mensaje"
+
+msgid "groups index"
+msgstr "listado de grupos"
+
+msgid "users index"
+msgstr "listado de usuarios"
+
+msgid "cfields index"
+msgstr "listado de campos"
+
+msgid "users import"
+msgstr "importar usuarios"
+
+msgid "users export"
+msgstr "exportar usuarios"
+
+msgid "queue index"
+msgstr "listado de colas"
+
+msgid "templates index"
+msgstr "listado de plantillas"
+
+msgid "setup index"
+msgstr "variables de entorno"
+

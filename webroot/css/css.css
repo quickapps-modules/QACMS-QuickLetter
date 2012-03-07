@@ -1,0 +1,77 @@
+div#progressBar {
+	width: 300px;
+	height: 16px;
+	margin: 0 auto 0 auto;
+	background: url(../img/progress_bg.gif);
+	border: 1px #b2b2b2 solid;
+}
+
+div#progressStatus {
+	width: 0%;
+	height: 16px;
+	background: url(../img/progress_fill.gif);
+	font-weight: normal;
+	color: #000;
+	text-align: right;
+	float: left;
+}
+
+span.sent-error {	color: #E23F06;}
+span.sent-ok {	color: #7DA825;}
+span.sent-blue {	color: #2A55FF;}
+.editor_ok_button {	margin: 0 0 0 5px;}
+.editor_cancel_button {	margin: 0 0 0 5px;}
+.editor_hoverClassName {	background: #D7E7FF;	padding: 5px;}
+.inplaceeditor-form {	display: inline;	margin: 0px;	padding: 0px;}
+.inplaceeditor-saving {
+	background: url(../img/ajax-loader.gif) no-repeat left;
+	padding: 0 0 0 20px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.Dropphover {	background: #FFF8D5;}
+
+/**
+ * Tabs
+ *
+ * @author      Roland Franssen <franssen.roland@gmail.com>
+ * @license     MIT
+ * @version     1.0
+ **/
+.tab-container {	margin: .5em 0;}
+.tab-container * {	padding: 0;	margin: 0;}
+.tab-container .tabs {	height: 25px;	overflow: hidden;}
+.tab-container .tabs li {
+	display: block;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 .5em;
+	background: #eee;
+}
+.tab-container .tabs li.selected a {	font-weight: bold;	background: #ccc;}
+.tab-container .tabs li a {
+	color: #999;
+	font-size: .85em;
+	text-decoration: none;
+}
+.tab-container .tabs li a:hover {text-decoration: underline;}
+.tab-container .tabs li.selected a,.tab-container .tabs li.selected a:hover{color: #666;}
+
+
+#fsUploadCsv .progressWrapper {width: 90%;overflow: hidden; margin:10px auto 10px auto; }
+#fsUploadCsv .progressContainer {	margin: 5px;	padding: 4px;	border: solid 1px #E8E8E8;	background-color: #F7F7F7;	overflow: hidden;}
+#fsUploadCsv .message {	margin: 1em 0;	padding: 10px 20px;	border: solid 1px #FFDD99;	background-color: #FFFFCC;	overflow: hidden;}
+#fsUploadCsv .red {	border: solid 1px #B50000;	background-color: #FFEBEB;}
+#fsUploadCsv .green {	border: solid 1px #DDF0DD;	background-color: #EBFFEB;}
+#fsUploadCsv .blue {	border: solid 1px #CEE2F2;	background-color: #F0F5FF;}
+#fsUploadCsv .progressName {	font-size: 8pt;	font-weight: 700;	color: #555;	width: 323px;	height: 14px;	text-align: left;	white-space: nowrap;	overflow: hidden;}
+#fsUploadCsv .progressBarInProgress,.progressBarComplete,.progressBarError {	font-size: 0;	width: 0%;	height: 2px;	background-color: blue;	margin-top: 2px;}
+#fsUploadCsv .progressBarComplete {	width: 100%;	background-color: green;	visibility: hidden;}
+#fsUploadCsv .progressBarError {	width: 100%;	background-color: red;	visibility: hidden;}
+#fsUploadCsv .progressBarStatus {	margin-top: 2px;	width: 337px;	font-size: 7pt;	font-family: Arial;	text-align: left;	white-space: nowrap;}
+#fsUploadCsv a.progressCancel {	font-size: 0;	display: block;	height: 14px;	width: 14px;	background-image: url(../img/uploader/cancelbutton.gif);	background-repeat: no-repeat;	background-position: -14px 0px;	float: right;}
+#fsUploadCsv a.progressCancel:hover {	background-position: 0px 0px;}
+
+
