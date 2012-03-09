@@ -1,0 +1,5 @@
+name: Quick Letter
+description: Newsletter system.
+category: Mailer
+version: 1.0
+core: 1.x

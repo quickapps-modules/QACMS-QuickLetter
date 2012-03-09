@@ -58,20 +58,20 @@
  */
 class File_CSV_DataSource
 {
-	public
+    public
 
-	/**
-	 * csv parsing default-settings
-	 *
-	 * @var array
-	 * @access public
-	 */
-	$settings = array(
+    /**
+     * csv parsing default-settings
+     *
+     * @var array
+     * @access public
+     */
+    $settings = array(
         'delimiter' => ',',
         'eol' => ";",
         'length' => 999999,
         'escape' => '"'
-        );
+       );
 
         protected
 
@@ -110,7 +110,7 @@ class File_CSV_DataSource
          */
         public function __construct($filename = null)
         {
-        	$this->load($filename);
+            $this->load($filename);
         }
 
         /**
@@ -132,20 +132,20 @@ class File_CSV_DataSource
          *       'name' => 'john',
          *       'age' => '13',
          *       'skill' => 'knows magic',
-         *     ),
+         *    ),
          *     1 =>
          *     array (
          *       'name' => 'tanaka',
          *       'age' => '8',
          *       'skill' => 'makes sushi',
-         *     ),
+         *    ),
          *     2 =>
          *     array (
          *       'name' => 'jose',
          *       'age' => '5',
          *       'skill' => 'dances salsa',
-         *     ),
-         *   )
+         *    ),
+         *  )
          *
          * </code>
          *
@@ -157,9 +157,9 @@ class File_CSV_DataSource
          */
         public function load($filename)
         {
-        	$this->_filename = $filename;
-        	$this->flush();
-        	return $this->parse();
+            $this->_filename = $filename;
+            $this->flush();
+            return $this->parse();
         }
 
         /**
@@ -175,7 +175,7 @@ class File_CSV_DataSource
          *      'eol' => ";",
          *      'length' => 999999,
          *      'escape' => '"'
-         *  );
+         * );
          * </code>
          *
          * @param mixed $array containing settings to use
@@ -186,7 +186,7 @@ class File_CSV_DataSource
          */
         public function settings($array)
         {
-        	$this->settings = array_merge($this->settings, $array);
+            $this->settings = array_merge($this->settings, $array);
         }
 
         /**
@@ -202,7 +202,7 @@ class File_CSV_DataSource
          *     0 => 'name',
          *     1 => 'age',
          *     2 => 'skill',
-         *   )
+         *  )
          *
          * </code>
          *
@@ -211,7 +211,7 @@ class File_CSV_DataSource
          */
         public function getHeaders()
         {
-        	return $this->headers;
+            return $this->headers;
         }
 
         /**
@@ -224,7 +224,7 @@ class File_CSV_DataSource
          */
         public function countHeaders()
         {
-        	return count($this->headers);
+            return count($this->headers);
         }
 
         /**
@@ -263,20 +263,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          *
          * </code>
          *
@@ -292,16 +292,16 @@ class File_CSV_DataSource
          *    0 =>
          *    array (
          *      'age' => '13',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'age' => '8',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'age' => '5',
-         *    ),
-         *  )
+         *   ),
+         * )
          *
          * </code>
          *
@@ -315,34 +315,34 @@ class File_CSV_DataSource
          */
         public function connect($columns = array())
         {
-        	if (!$this->isSymmetric()) {
-        		return array();
-        	}
-        	if (!is_array($columns)) {
-        		return array();
-        	}
-        	if ($columns === array()) {
-        		$columns = $this->headers;
-        	}
+            if (!$this->isSymmetric()) {
+                return array();
+            }
+            if (!is_array($columns)) {
+                return array();
+            }
+            if ($columns === array()) {
+                $columns = $this->headers;
+            }
 
-        	$ret_arr = array();
+            $ret_arr = array();
 
-        	foreach ($this->rows as $record) {
-        		$item_array = array();
-        		foreach ($record as $column => $value) {
-        			$header = $this->headers[$column];
-        			if (in_array($header, $columns)) {
-        				$item_array[$header] = $value;
-        			}
-        		}
+            foreach ($this->rows as $record) {
+                $item_array = array();
+                foreach ($record as $column => $value) {
+                    $header = $this->headers[$column];
+                    if (in_array($header, $columns)) {
+                        $item_array[$header] = $value;
+                    }
+                }
 
-        		// do not append empty results
-        		if ($item_array !== array()) {
-        			array_push($ret_arr, $item_array);
-        		}
-        	}
+                // do not append empty results
+                if ($item_array !== array()) {
+                    array_push($ret_arr, $item_array);
+                }
+            }
 
-        	return $ret_arr;
+            return $ret_arr;
         }
 
         /**
@@ -358,13 +358,13 @@ class File_CSV_DataSource
          */
         public function isSymmetric()
         {
-        	$hc = count($this->headers);
-        	foreach ($this->rows as $row) {
-        		if (count($row) != $hc) {
-        			return false;
-        		}
-        	}
-        	return true;
+            $hc = count($this->headers);
+            foreach ($this->rows as $row) {
+                if (count($row) != $hc) {
+                    return false;
+                }
+            }
+            return true;
         }
 
         /**
@@ -399,8 +399,8 @@ class File_CSV_DataSource
          *     array (
          *       0 => 'niki',
          *       1 => '6',
-         *     ),
-         *   )
+         *    ),
+         *  )
          *
          * </code>
          *
@@ -411,14 +411,14 @@ class File_CSV_DataSource
          */
         public function getAsymmetricRows()
         {
-        	$ret_arr = array();
-        	$hc      = count($this->headers);
-        	foreach ($this->rows as $row) {
-        		if (count($row) != $hc) {
-        			$ret_arr[] = $row;
-        		}
-        	}
-        	return $ret_arr;
+            $ret_arr = array();
+            $hc      = count($this->headers);
+            foreach ($this->rows as $row) {
+                if (count($row) != $hc) {
+                    $ret_arr[] = $row;
+                }
+            }
+            return $ret_arr;
         }
 
         /**
@@ -435,24 +435,24 @@ class File_CSV_DataSource
          */
         public function symmetrize($value = '')
         {
-        	$max_length = 0;
+            $max_length = 0;
 
-        	foreach ($this->rows as $row) {
-        		$row_length = count($row);
-        		if ($max_length < $row_length) {
-        			$max_length = $row_length;
-        		}
-        	}
+            foreach ($this->rows as $row) {
+                $row_length = count($row);
+                if ($max_length < $row_length) {
+                    $max_length = $row_length;
+                }
+            }
 
-        	if ($max_length == 0) {
-        		$max_length = count($this->headers);
-        	}
+            if ($max_length == 0) {
+                $max_length = count($this->headers);
+            }
 
-        	foreach ($this->rows as $key => $row) {
-        		$this->rows[$key] = array_pad($row, $max_length, $value);
-        	}
+            foreach ($this->rows as $key => $row) {
+                $this->rows[$key] = array_pad($row, $max_length, $value);
+            }
 
-        	$this->headers = array_pad($this->headers, $max_length, $value);
+            $this->headers = array_pad($this->headers, $max_length, $value);
         }
 
         /**
@@ -474,12 +474,12 @@ class File_CSV_DataSource
          */
         public function walkGrid($callback)
         {
-        	foreach (array_keys($this->getRows()) as $key) {
-        		if (!$this->walkRow($key, $callback)) {
-        			return false;
-        		}
-        	}
-        	return true;
+            foreach (array_keys($this->getRows()) as $key) {
+                if (!$this->walkRow($key, $callback)) {
+                    return false;
+                }
+            }
+            return true;
         }
 
         /**
@@ -514,7 +514,7 @@ class File_CSV_DataSource
          *     0 => 'john',
          *     1 => 'tanaka',
          *     2 => 'jose',
-         *   )
+         *  )
          *
          * </code>
          *
@@ -527,15 +527,15 @@ class File_CSV_DataSource
          */
         public function getColumn($name)
         {
-        	if (!in_array($name, $this->headers)) {
-        		return array();
-        	}
-        	$ret_arr = array();
-        	$key     = array_search($name, $this->headers, true);
-        	foreach ($this->rows as $data) {
-        		$ret_arr[] = $data[$key];
-        	}
-        	return $ret_arr;
+            if (!in_array($name, $this->headers)) {
+                return array();
+            }
+            $ret_arr = array();
+            $key     = array_search($name, $this->headers, true);
+            foreach ($this->rows as $data) {
+                $ret_arr[] = $data[$key];
+            }
+            return $ret_arr;
         }
 
         /**
@@ -577,7 +577,7 @@ class File_CSV_DataSource
          */
         public function hasColumn($string)
         {
-        	return in_array($string, $this->headers);
+            return in_array($string, $this->headers);
         }
 
         /**
@@ -607,7 +607,7 @@ class File_CSV_DataSource
          *      'skill' => 'knows magic',
          *      'candy_ownership' => 99,
          *      'import_id' => 111111111,
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
@@ -615,7 +615,7 @@ class File_CSV_DataSource
          *      'skill' => 'makes sushi',
          *      'candy_ownership' => 44,
          *      'import_id' => 111111111,
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
@@ -623,8 +623,8 @@ class File_CSV_DataSource
          *      'skill' => 'dances salsa',
          *      'candy_ownership' => 65,
          *      'import_id' => 111111111,
-         *    ),
-         *  )
+         *   ),
+         * )
          *
          * </code>
          *
@@ -638,24 +638,24 @@ class File_CSV_DataSource
          */
         public function appendColumn($column, $values = null)
         {
-        	if ($this->hasColumn($column)) {
-        		return false;
-        	}
-        	$this->headers[] = $column;
-        	$length          = $this->countHeaders();
-        	$rows            = array();
+            if ($this->hasColumn($column)) {
+                return false;
+            }
+            $this->headers[] = $column;
+            $length          = $this->countHeaders();
+            $rows            = array();
 
-        	foreach ($this->rows as $row) {
-        		$rows[] = array_pad($row, $length, '');
-        	}
+            foreach ($this->rows as $row) {
+                $rows[] = array_pad($row, $length, '');
+            }
 
-        	$this->rows = $rows;
+            $this->rows = $rows;
 
-        	if ($values === null) {
-        		$values = '';
-        	}
+            if ($values === null) {
+                $values = '';
+            }
 
-        	return $this->fillColumn($column, $values);
+            return $this->fillColumn($column, $values);
         }
 
         /**
@@ -705,7 +705,7 @@ class File_CSV_DataSource
          *     0 => '13',
          *     1 => '8',
          *     2 => '5',
-         *   )
+         *  )
          * </code>
          *
          * <code>
@@ -717,7 +717,7 @@ class File_CSV_DataSource
          *     0 => 99,
          *     1 => 99,
          *     2 => 99,
-         *   )
+         *  )
          * </code>
          *
          * <code>
@@ -725,7 +725,7 @@ class File_CSV_DataSource
          *     0 => 1,
          *     1 => 2,
          *     2 => 3,
-         *   )
+         *  )
          * </code>
          *
          * @param mixed $column the column identified by a string
@@ -740,40 +740,40 @@ class File_CSV_DataSource
          */
         public function fillColumn($column, $values = null)
         {
-        	if (!$this->hasColumn($column)) {
-        		return false;
-        	}
+            if (!$this->hasColumn($column)) {
+                return false;
+            }
 
-        	if ($values === null) {
-        		return false;
-        	}
+            if ($values === null) {
+                return false;
+            }
 
-        	if (!$this->isSymmetric()) {
-        		return false;
-        	}
+            if (!$this->isSymmetric()) {
+                return false;
+            }
 
-        	$y = array_search($column, $this->headers);
+            $y = array_search($column, $this->headers);
 
-        	if (is_numeric($values) || is_string($values)) {
-        		foreach (range(0, $this->countRows() -1) as $x) {
-        			$this->fillCell($x, $y, $values);
-        		}
-        		return true;
-        	}
+            if (is_numeric($values) || is_string($values)) {
+                foreach (range(0, $this->countRows() -1) as $x) {
+                    $this->fillCell($x, $y, $values);
+                }
+                return true;
+            }
 
-        	if ($values === array()) {
-        		return false;
-        	}
+            if ($values === array()) {
+                return false;
+            }
 
-        	$length = $this->countRows();
-        	if (is_array($values) && $length == count($values)) {
-        		for ($x = 0; $x < $length; $x++) {
-        			$this->fillCell($x, $y, $values[$x]);
-        		}
-        		return true;
-        	}
+            $length = $this->countRows();
+            if (is_array($values) && $length == count($values)) {
+                for ($x = 0; $x < $length; $x++) {
+                    $this->fillCell($x, $y, $values[$x]);
+                }
+                return true;
+            }
 
-        	return false;
+            return false;
         }
 
         /**
@@ -813,20 +813,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * and now let's remove the second column
@@ -849,18 +849,18 @@ class File_CSV_DataSource
          *    array (
          *      'name' => 'john',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param string $name same as the ones returned by getHeaders();
@@ -872,24 +872,24 @@ class File_CSV_DataSource
          */
         public function removeColumn($name)
         {
-        	if (!in_array($name, $this->headers)) {
-        		return false;
-        	}
+            if (!in_array($name, $this->headers)) {
+                return false;
+            }
 
-        	if (!$this->isSymmetric()) {
-        		return false;
-        	}
+            if (!$this->isSymmetric()) {
+                return false;
+            }
 
-        	$key = array_search($name, $this->headers);
-        	unset($this->headers[$key]);
-        	$this->resetKeys($this->headers);
+            $key = array_search($name, $this->headers);
+            unset($this->headers[$key]);
+            $this->resetKeys($this->headers);
 
-        	foreach ($this->rows as $target => $row) {
-        		unset($this->rows[$target][$key]);
-        		$this->resetKeys($this->rows[$target]);
-        	}
+            foreach ($this->rows as $target => $row) {
+                unset($this->rows[$target][$key]);
+                $this->resetKeys($this->rows[$target]);
+            }
 
-        	return $this->isSymmetric();
+            return $this->isSymmetric();
         }
 
         /**
@@ -912,23 +912,23 @@ class File_CSV_DataSource
          */
         public function walkColumn($name, $callback)
         {
-        	if (!$this->isSymmetric()) {
-        		return false;
-        	}
+            if (!$this->isSymmetric()) {
+                return false;
+            }
 
-        	if (!$this->hasColumn($name)) {
-        		return false;
-        	}
+            if (!$this->hasColumn($name)) {
+                return false;
+            }
 
-        	if (!function_exists($callback)) {
-        		return false;
-        	}
+            if (!function_exists($callback)) {
+                return false;
+            }
 
-        	$column = $this->getColumn($name);
-        	foreach ($column as $key => $cell) {
-        		$column[$key] = $callback($cell);
-        	}
-        	return $this->fillColumn($name, $column);
+            $column = $this->getColumn($name);
+            foreach ($column as $key => $cell) {
+                $column[$key] = $callback($cell);
+            }
+            return $this->fillColumn($name, $column);
         }
 
         /**
@@ -969,11 +969,11 @@ class File_CSV_DataSource
          */
         public function getCell($x, $y)
         {
-        	if ($this->hasCell($x, $y)) {
-        		$row = $this->getRow($x);
-        		return $row[$y];
-        	}
-        	return false;
+            if ($this->hasCell($x, $y)) {
+                $row = $this->getRow($x);
+                return $row[$y];
+            }
+            return false;
         }
 
         /**
@@ -1000,7 +1000,7 @@ class File_CSV_DataSource
          *   $csv->load('my_cool.csv');
          *
          *   // find out if the given coordinate is valid
-         *   if($csv->hasCell(1, 1)) {
+         *   if ($csv->hasCell(1, 1)) {
          *
          *       // if so grab that cell and dump it
          *       var_export($csv->getCell(1, 1));       // '8'
@@ -1028,7 +1028,7 @@ class File_CSV_DataSource
          *     0 => 'tanaka',
          *     1 => 'new value',
          *     2 => 'makes sushi',
-         *   )
+         *  )
          * </code>
          *
          * @param integer $x     the row to fetch
@@ -1041,13 +1041,13 @@ class File_CSV_DataSource
          */
         public function fillCell($x, $y, $value)
         {
-        	if (!$this->hasCell($x, $y)) {
-        		return false;
-        	}
-        	$row            = $this->getRow($x);
-        	$row[$y]        = $value;
-        	$this->rows[$x] = $row;
-        	return true;
+            if (!$this->hasCell($x, $y)) {
+                return false;
+            }
+            $row            = $this->getRow($x);
+            $row[$y]        = $value;
+            $this->rows[$x] = $row;
+            return true;
         }
 
         /**
@@ -1091,9 +1091,9 @@ class File_CSV_DataSource
          */
         public function hasCell($x, $y)
         {
-        	$has_x = array_key_exists($x, $this->rows);
-        	$has_y = array_key_exists($y, $this->headers);
-        	return ($has_x && $has_y);
+            $has_x = array_key_exists($x, $this->rows);
+            $has_y = array_key_exists($y, $this->headers);
+            return ($has_x && $has_y);
         }
 
         /**
@@ -1132,20 +1132,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * Now let's fetch the second row
@@ -1161,7 +1161,7 @@ class File_CSV_DataSource
          *    0 => 'tanaka',
          *    1 => '8',
          *    2 => 'makes sushi',
-         *  )
+         * )
          * </code>
          *
          * @param integer $number the row number to fetch
@@ -1172,11 +1172,11 @@ class File_CSV_DataSource
          */
         public function getRow($number)
         {
-        	$raw = $this->rows;
-        	if (array_key_exists($number, $raw)) {
-        		return $raw[$number];
-        	}
-        	return array();
+            $raw = $this->rows;
+            if (array_key_exists($number, $raw)) {
+                return $raw[$number];
+            }
+            return array();
         }
 
         /**
@@ -1219,20 +1219,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now get the second and thirdh row
@@ -1250,14 +1250,14 @@ class File_CSV_DataSource
          *      0 => 'tanaka',
          *      1 => '8',
          *      2 => 'makes sushi',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      0 => 'jose',
          *      1 => '5',
          *      2 => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now lets try something odd and the goodie third row
@@ -1275,8 +1275,8 @@ class File_CSV_DataSource
          *      0 => 'jose',
          *      1 => '5',
          *      2 => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param array $range a list of rows to retrive
@@ -1286,21 +1286,21 @@ class File_CSV_DataSource
          */
         public function getRows($range = array())
         {
-        	if (is_array($range) && ($range === array())) {
-        		return $this->rows;
-        	}
+            if (is_array($range) && ($range === array())) {
+                return $this->rows;
+            }
 
-        	if (!is_array($range)) {
-        		return $this->rows;
-        	}
+            if (!is_array($range)) {
+                return $this->rows;
+            }
 
-        	$ret_arr = array();
-        	foreach ($this->rows as $key => $row) {
-        		if (in_array($key, $range)) {
-        			$ret_arr[] = $row;
-        		}
-        	}
-        	return $ret_arr;
+            $ret_arr = array();
+            foreach ($this->rows as $key => $row) {
+                if (in_array($key, $range)) {
+                    $ret_arr[] = $row;
+                }
+            }
+            return $ret_arr;
         }
 
         /**
@@ -1330,7 +1330,7 @@ class File_CSV_DataSource
          */
         public function countRows()
         {
-        	return count($this->rows);
+            return count($this->rows);
         }
 
         /**
@@ -1367,20 +1367,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now lets do some modifications, let's try adding three rows.
@@ -1414,38 +1414,38 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
+         *   ),
          *    3 =>
          *    array (
          *      'name' => 1,
          *      'age' => 1,
          *      'skill' => 1,
-         *    ),
+         *   ),
          *    4 =>
          *    array (
          *      'name' => '2',
          *      'age' => '2',
          *      'skill' => '2',
-         *    ),
+         *   ),
          *    5 =>
          *    array (
          *      'name' => 3,
          *      'age' => 3,
          *      'skill' => 3,
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param array $values the values to be appended to the row
@@ -1455,9 +1455,9 @@ class File_CSV_DataSource
          */
         public function appendRow($values)
         {
-        	$this->rows[] = array();
-        	$this->symmetrize();
-        	return $this->fillRow($this->countRows() - 1, $values);
+            $this->rows[] = array();
+            $this->symmetrize();
+            return $this->fillRow($this->countRows() - 1, $values);
         }
 
         /**
@@ -1509,20 +1509,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'x',
          *      'age' => 'x',
          *      'skill' => 'x',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now lets try to fill the row with specific data for each cell
@@ -1553,20 +1553,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 1,
          *      'age' => 2,
          *      'skill' => 3,
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param integer $row    the row to fill identified by its key
@@ -1582,24 +1582,24 @@ class File_CSV_DataSource
          */
         public function fillRow($row, $values)
         {
-        	if (!$this->hasRow($row)) {
-        		return false;
-        	}
+            if (!$this->hasRow($row)) {
+                return false;
+            }
 
-        	if (is_string($values) || is_numeric($values)) {
-        		foreach ($this->rows[$row] as $key => $cell) {
-        			$this->rows[$row][$key] = $values;
-        		}
-        		return true;
-        	}
+            if (is_string($values) || is_numeric($values)) {
+                foreach ($this->rows[$row] as $key => $cell) {
+                    $this->rows[$row][$key] = $values;
+                }
+                return true;
+            }
 
-        	$eql_to_headers = ($this->countHeaders() == count($values));
-        	if (is_array($values) && $this->isSymmetric() && $eql_to_headers) {
-        		$this->rows[$row] = $values;
-        		return true;
-        	}
+            $eql_to_headers = ($this->countHeaders() == count($values));
+            if (is_array($values) && $this->isSymmetric() && $eql_to_headers) {
+                $this->rows[$row] = $values;
+                return true;
+            }
 
-        	return false;
+            return false;
         }
 
         /**
@@ -1641,20 +1641,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>  // THIS ROW EXISTS!!!
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now lets check for row existance
@@ -1682,7 +1682,7 @@ class File_CSV_DataSource
          */
         public function hasRow($number)
         {
-        	return (in_array($number, array_keys($this->rows)));
+            return (in_array($number, array_keys($this->rows)));
         }
 
         /**
@@ -1718,20 +1718,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * now lets remove the second row
@@ -1762,14 +1762,14 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param mixed $number the key that identifies that row
@@ -1781,15 +1781,15 @@ class File_CSV_DataSource
          */
         public function removeRow($number)
         {
-        	$cnt = $this->countRows();
-        	$row = $this->getRow($number);
-        	if (is_array($row) && ($row != array())) {
-        		unset($this->rows[$number]);
-        	} else {
-        		return false;
-        	}
-        	$this->resetKeys($this->rows);
-        	return ($cnt == ($this->countRows() + 1));
+            $cnt = $this->countRows();
+            $row = $this->getRow($number);
+            if (is_array($row) && ($row != array())) {
+                unset($this->rows[$number]);
+            } else {
+                return false;
+            }
+            $this->resetKeys($this->rows);
+            return ($cnt == ($this->countRows() + 1));
         }
 
         /**
@@ -1816,16 +1816,16 @@ class File_CSV_DataSource
          */
         public function walkRow($row, $callback)
         {
-        	if (!function_exists($callback)) {
-        		return false;
-        	}
-        	if ($this->hasRow($row)) {
-        		foreach ($this->getRow($row) as $key => $value) {
-        			$this->rows[$row][$key] = $callback($value);
-        		}
-        		return true;
-        	}
-        	return false;
+            if (!function_exists($callback)) {
+                return false;
+            }
+            if ($this->hasRow($row)) {
+                foreach ($this->getRow($row) as $key => $value) {
+                    $this->rows[$row][$key] = $callback($value);
+                }
+                return true;
+            }
+            return false;
         }
 
         /**
@@ -1843,12 +1843,12 @@ class File_CSV_DataSource
          */
         public function getRawArray()
         {
-        	$ret_arr   = array();
-        	$ret_arr[] = $this->headers;
-        	foreach ($this->rows as $row) {
-        		$ret_arr[] = $row;
-        	}
-        	return $ret_arr;
+            $ret_arr   = array();
+            $ret_arr[] = $this->headers;
+            foreach ($this->rows as $row) {
+                $ret_arr[] = $row;
+            }
+            return $ret_arr;
         }
 
         /**
@@ -1896,7 +1896,7 @@ class File_CSV_DataSource
          *     0 => 'john',
          *     1 => '13',
          *     2 => 'knows magic',
-         *   )
+         *  )
          * </code>
          *
          * generate headers named 'column' suffixed by a number and interpret
@@ -1919,7 +1919,7 @@ class File_CSV_DataSource
          *     0 => 'column_1',
          *     1 => 'column_2',
          *     2 => 'column_3',
-         *   )
+         *  )
          * </code>
          *
          * build a relationship and dump it
@@ -1938,20 +1938,20 @@ class File_CSV_DataSource
          *      'column_1' => 'john',
          *      'column_2' => '13',
          *      'column_3' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'column_1' => 'tanaka',
          *      'column_2' => '8',
          *      'column_3' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'column_1' => 'jose',
          *      'column_2' => '5',
          *      'column_3' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param string $prefix string to use as prefix for each
@@ -1963,19 +1963,19 @@ class File_CSV_DataSource
          */
         public function createHeaders($prefix)
         {
-        	if (!$this->isSymmetric()) {
-        		return false;
-        	}
+            if (!$this->isSymmetric()) {
+                return false;
+            }
 
-        	$length = count($this->headers) + 1;
-        	$this->moveHeadersToRows();
+            $length = count($this->headers) + 1;
+            $this->moveHeadersToRows();
 
-        	$ret_arr = array();
-        	for ($i = 1; $i < $length; $i ++) {
-        		$ret_arr[] = $prefix . "_$i";
-        	}
-        	$this->headers = $ret_arr;
-        	return $this->isSymmetric();
+            $ret_arr = array();
+            for ($i = 1; $i < $length; $i ++) {
+                $ret_arr[] = $prefix . "_$i";
+            }
+            $this->headers = $ret_arr;
+            return $this->isSymmetric();
         }
 
         /**
@@ -2021,20 +2021,20 @@ class File_CSV_DataSource
          *      'name' => 'john',
          *      'age' => '13',
          *      'skill' => 'knows magic',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'name' => 'tanaka',
          *      'age' => '8',
          *      'skill' => 'makes sushi',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'name' => 'jose',
          *      'age' => '5',
          *      'skill' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * And now lets create a new set of headers and attempt to inject
@@ -2080,26 +2080,26 @@ class File_CSV_DataSource
          *      'a' => 'name',
          *      'b' => 'age',
          *      'c' => 'skill',
-         *    ),
+         *   ),
          *    1 =>
          *    array (
          *      'a' => 'john',
          *      'b' => '13',
          *      'c' => 'knows magic',
-         *    ),
+         *   ),
          *    2 =>
          *    array (
          *      'a' => 'tanaka',
          *      'b' => '8',
          *      'c' => 'makes sushi',
-         *    ),
+         *   ),
          *    3 =>
          *    array (
          *      'a' => 'jose',
          *      'b' => '5',
          *      'c' => 'dances salsa',
-         *    ),
-         *  )
+         *   ),
+         * )
          * </code>
          *
          * @param array $list a collection of names to use as headers,
@@ -2110,18 +2110,18 @@ class File_CSV_DataSource
          */
         public function setHeaders($list)
         {
-        	if (!$this->isSymmetric()) {
-        		return false;
-        	}
-        	if (!is_array($list)) {
-        		return false;
-        	}
-        	if (count($list) != count($this->headers)) {
-        		return false;
-        	}
-        	$this->moveHeadersToRows();
-        	$this->headers = $list;
-        	return true;
+            if (!$this->isSymmetric()) {
+                return false;
+            }
+            if (!is_array($list)) {
+                return false;
+            }
+            if (count($list) != count($this->headers)) {
+                return false;
+            }
+            $this->moveHeadersToRows();
+            $this->headers = $list;
+            return true;
         }
 
         /**
@@ -2134,31 +2134,31 @@ class File_CSV_DataSource
          */
         protected function parse()
         {
-        	if (!$this->validates()) {
-        		return false;
-        	}
+            if (!$this->validates()) {
+                return false;
+            }
 
-        	$c = 0;
-        	$d = $this->settings['delimiter'];
-        	$e = $this->settings['escape'];
-        	$l = $this->settings['length'];
+            $c = 0;
+            $d = $this->settings['delimiter'];
+            $e = $this->settings['escape'];
+            $l = $this->settings['length'];
 
-        	$res = fopen($this->_filename, 'r');
+            $res = fopen($this->_filename, 'r');
 
-        	while ($keys = fgetcsv($res, $l, $d, $e)) {
+            while ($keys = fgetcsv($res, $l, $d, $e)) {
 
-        		if ($c == 0) {
-        			$this->headers = $keys;
-        		} else {
-        			array_push($this->rows, $keys);
-        		}
+                if ($c == 0) {
+                    $this->headers = $keys;
+                } else {
+                    array_push($this->rows, $keys);
+                }
 
-        		$c ++;
-        	}
+                $c ++;
+            }
 
-        	fclose($res);
-        	$this->removeEmpty();
-        	return true;
+            fclose($res);
+            $this->removeEmpty();
+            return true;
         }
 
         /**
@@ -2171,14 +2171,14 @@ class File_CSV_DataSource
          */
         protected function removeEmpty()
         {
-        	$ret_arr = array();
-        	foreach ($this->rows as $row) {
-        		$line = trim(join('', $row));
-        		if (!empty($line)) {
-        			$ret_arr[] = $row;
-        		}
-        	}
-        	$this->rows = $ret_arr;
+            $ret_arr = array();
+            foreach ($this->rows as $row) {
+                $line = trim(join('', $row));
+                if (!empty($line)) {
+                    $ret_arr[] = $row;
+                }
+            }
+            $this->rows = $ret_arr;
         }
 
         /**
@@ -2191,17 +2191,17 @@ class File_CSV_DataSource
          */
         protected function validates()
         {
-        	// file existance
-        	if (!file_exists($this->_filename)) {
-        		return false;
-        	}
+            // file existance
+            if (!file_exists($this->_filename)) {
+                return false;
+            }
 
-        	// file readability
-        	if (!is_readable($this->_filename)) {
-        		return false;
-        	}
+            // file readability
+            if (!is_readable($this->_filename)) {
+                return false;
+            }
 
-        	return true;
+            return true;
         }
 
         /**
@@ -2212,13 +2212,13 @@ class File_CSV_DataSource
          */
         protected function moveHeadersToRows()
         {
-        	$arr   = array();
-        	$arr[] = $this->headers;
-        	foreach ($this->rows as $row) {
-        		$arr[] = $row;
-        	}
-        	$this->rows    = $arr;
-        	$this->headers = array();
+            $arr   = array();
+            $arr[] = $this->headers;
+            foreach ($this->rows as $row) {
+                $arr[] = $row;
+            }
+            $this->rows    = $arr;
+            $this->headers = array();
         }
 
         /**
@@ -2237,11 +2237,11 @@ class File_CSV_DataSource
          */
         protected function resetKeys(&$array)
         {
-        	$arr = array();
-        	foreach ($array as $item) {
-        		$arr[] = $item;
-        	}
-        	$array = $arr;
+            $arr = array();
+            foreach ($array as $item) {
+                $arr[] = $item;
+            }
+            $array = $arr;
         }
 
         /**
@@ -2255,8 +2255,8 @@ class File_CSV_DataSource
          */
         protected function flush()
         {
-        	$this->rows    = array();
-        	$this->headers = array();
+            $this->rows    = array();
+            $this->headers = array();
         }
 
 }

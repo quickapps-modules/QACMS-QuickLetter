@@ -73,5 +73,3 @@ span.sent-blue {	color: #2A55FF;}
 #fsUploadCsv .progressBarStatus {	margin-top: 2px;	width: 337px;	font-size: 7pt;	font-family: Arial;	text-align: left;	white-space: nowrap;}
 #fsUploadCsv a.progressCancel {	font-size: 0;	display: block;	height: 14px;	width: 14px;	background-image: url(../img/uploader/cancelbutton.gif);	background-repeat: no-repeat;	background-position: -14px 0px;	float: right;}
 #fsUploadCsv a.progressCancel:hover {	background-position: 0px 0px;}
-
-
